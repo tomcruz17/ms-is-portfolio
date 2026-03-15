@@ -1,0 +1,145 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #ffffff;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+/* Nav */
+nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 60px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.socials {
+  display: flex;
+  gap: 24px;
+}
+
+.socials a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  color: #1a1a1a;
+  font-size: 0.9rem;
+  transition: opacity 0.2s;
+}
+
+.socials a:hover {
+  opacity: 0.6;
+}
+
+.socials svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.email-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #1a1a1a;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: opacity 0.2s;
+}
+
+.email-btn:hover {
+  opacity: 0.6;
+}
+
+.email-toast {
+  font-size: 0.8rem;
+  color: #666;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.email-toast.show {
+  opacity: 1;
+}
+
+
+
+/* About Section */
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  padding: 80px 60px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 6px;
+}
+
+.about-text h2 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #666;
+  margin-bottom: 24px;
+}
+
+.about-text p {
+  font-size: 1rem;
+  color: #444;
+  max-width: 520px;
+}
+
+.about-photo {
+  flex-shrink: 0;
+  width: 340px;
+  align-self: center;
+}
+
+.about-photo img {
+  width: 340px;
+  border-radius: 0;
+  object-fit: contain;
+  display: block;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  nav {
+    padding: 16px 24px;
+  }
+
+  #about {
+    flex-direction: column-reverse;
+    padding: 48px 24px;
+    gap: 32px;
+    text-align: center;
+  }
+
+  .about-text p {
+    max-width: 100%;
+  }
+
+  .about-text h1 {
+    font-size: 2rem;
+  }
+}
