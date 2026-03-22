@@ -150,9 +150,103 @@ nav {
   color: #444;
 }
 
+.data-informed-list {
+  margin: 12px 0;
+  padding-left: 1.2em;
+  font-size: 1rem;
+  color: #444;
+}
+
+.data-informed-list li {
+  margin-bottom: 8px;
+}
+
 .data-informed-image img {
   width: 100%;
   display: block;
+}
+
+/* Experience & Education Sections */
+#experience,
+#education {
+  padding: 40px 60px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+#experience > h2,
+#education > h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  margin-bottom: 16px;
+  color: #1a1a1a;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 40px;
+}
+
+.timeline-date {
+  flex-shrink: 0;
+  width: 160px;
+  font-size: 0.85rem;
+  color: #888;
+  padding-top: 2px;
+}
+
+.timeline-content h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.timeline-role {
+  font-weight: 400;
+  color: #666;
+}
+
+/* Projects Section */
+#projects {
+  padding: 40px 60px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+#projects > h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+  margin-bottom: 16px;
+  color: #1a1a1a;
+}
+
+.project-item + .project-item {
+  margin-top: 16px;
+}
+
+.project-item h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.project-tech {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.project-item p {
+  font-size: 0.95rem;
+  color: #444;
 }
 
 /* Responsive */
@@ -184,5 +278,23 @@ nav {
   .data-informed-image {
     width: 100%;
     max-width: 340px;
+  }
+
+  #experience,
+  #education {
+    padding: 32px 24px 16px;
+  }
+
+  #projects {
+    padding: 32px 24px 16px;
+  }
+
+  .timeline-item {
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .timeline-date {
+    width: auto;
   }
 }

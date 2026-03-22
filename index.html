@@ -85,19 +85,87 @@
     </div>
   </section>
 
+  <!-- Professional Experience Section -->
+  <section id="experience">
+    <h2>Professional Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-date">Aug 2020 — Present</div>
+        <div class="timeline-content">
+          <h3>Aki Technologies <span class="timeline-role">· DevOps Engineer</span></h3>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">Sep 2017 — Dec 2019</div>
+        <div class="timeline-content">
+          <h3>CWT <span class="timeline-role">· Software Engineer</span></h3>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">Sep 2015 — Sep 2017</div>
+        <div class="timeline-content">
+          <h3>Accenture <span class="timeline-role">· Senior Software Engineer</span></h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education">
+    <h2>Education</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-date">Jun 2024 — Present</div>
+        <div class="timeline-content">
+          <h3>Trine University <span class="timeline-role">· MS Information Studies</span></h3>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">2011 — 2013</div>
+        <div class="timeline-content">
+          <h3>De La Salle University <span class="timeline-role">· MS Computer Science</span></h3>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">2008 — 2011</div>
+        <div class="timeline-content">
+          <h3>De La Salle University <span class="timeline-role">· BS Computer Science · Magna Cum Laude</span></h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-item">
+      <h3>superbad</h3>
+      <p class="project-tech">OpenTofu/Terrform | AWS | Kubernetes | GitOps | Atlantis | GitHub</p>
+      <p>A self-service infrastructure platform that enables engineers to declaratively define their application requirements and automatically provision their entire tech stack. By specifying a simple configuration, teams get a fully wired environment including a GitHub repository, AWS compute and storage resources, Kubernetes workloads, RBAC/permissions, and more — all managed through OpenTofu and delivered via GitOps with Atlantis. It removes the operational overhead of setting up and maintaining cloud infrastructure, letting engineers focus on shipping code instead of wrangling resources.</p>
+    </div>
+    <div class="project-item">
+      <h3>big-bang</h3>
+      <p class="project-tech">OpenTofu/Terraform | AWS (EKS, S3, IAM, Athena, VPC) | Atlantis | Python | Bash</p>
+      <p>From zero to a deployment-ready EKS cluster. This Infrastructure-as-Code(IaC) repository provisions and manages multi-environment, multi-account AWS infrastructure using OpenTofu, taking Kubernetes clusters from nothing to production-grade with a single codebase. It follows a GitOps workflow where infrastructure changes are planned and applied through pull requests, with CI pipelines enforcing linting and validation on every push. Reusable modules handle cross-cutting concerns like cluster backups, observability, analytics, and IAM.</p>
+    </div>
+  </section>
+
   <!-- Data-Informed Decision-Making Section -->
   <section id="data-informed">
     <div class="data-informed-text">
       <h2>Data-Informed Decision-Making</h2>
       <p>
-Through my CPT experience as a DevOps engineer, I have learned that data-informed decision-making involves much more than monitoring dashboards. 
-Metrics are valuable for identifying <i>trends, risks,</i> and <i>opportunities</i>, but they should be interpreted carefully and within context. This week's lessons reinforced the importance of being <i>skeptical</i> of data summaries and understanding that effective decisions require a more holistic view.
-<br><br>
-In practice, I have seen how a single metric can be misleading when interpreted <i>in isolation</i>. For example, high deployment frequency may appear to reflect good team performance, but a high number of deployments could indicate repeated patching and instability rather than efficiency. 
-On the other hand, fewer deployments may suggest a more stable and mature system. I have also seen this in cloud cost management, where rising AWS storage costs clearly signaled a financial trend, but the data alone could not determine which stored data was truly expendable. 
-That decision required collaboration with engineers who understood the business and operational value of the data.
-<br><br>
-These experiences have shown me that strong decision-making comes from combining quantitative evidence with <i>critical thinking</i> and <i>contextual interpretation</i>.
+        Through my CPT experience as a DevOps engineer, I have learned that data-informed decision-making goes beyond reacting to dashboards and metrics alone. 
+        Metrics are valuable for identifying <i>trends, risks,</i> and <i>opportunities</i>, but they should be interpreted carefully and within context. 
+        A single metric can be misleading when viewed in isolation, and effective decisions require a more holistic view that combines data with real-world understanding.
+        I've encountered the following during my practice, which reinforce the idea that data can be misleading when it lacks context.
+      </p>
+      <ul class="data-informed-list">
+        <li><i>Deployment frequency:</i> High deployment rates may appear to reflect strong team performance, but they can actually signal repeated patching and instability rather than true efficiency. Conversely, fewer deployments may indicate a more stable and mature system. Context determines the real story behind the numbers.</li>
+        <li><i>Cloud cost management:</i> Rising AWS storage costs clearly indicated a financial trend, but the data alone could not determine which stored data was truly expendable. That decision required collaboration with Application engineers and product owners who understood the business and operational value of the data being retained.</li>
+      </ul>
+      <p>
+        These experiences have shown me that strong decision-making comes from combining quantitative evidence with <i>critical thinking</i> and <i>contextual interpretation</i>.
       </p>
     </div>
   </section>
